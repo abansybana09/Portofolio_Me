@@ -34,7 +34,7 @@ export default function Home() {
               </Avatar>
             </motion.div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight">Nama Kamu</h1>
+              <h1 className="text-4xl font-bold tracking-tight">Mohamad Aban Sy'bana</h1>
               <p className="text-muted-foreground mt-1">Frontend Developer • UI/UX Enthusiast</p>
               <div className="flex gap-2 mt-3 flex-wrap">
                 <Badge>Next.js</Badge>
@@ -56,40 +56,46 @@ export default function Home() {
 
         {/* About + Skills */}
         <motion.section
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
           className="grid md:grid-cols-3 gap-6"
         >
-          <Card className="md:col-span-2 hover:shadow-lg transition">
-            <CardHeader>
-              <CardTitle>Tentang Saya</CardTitle>
-              <CardDescription>
-                Saya pengembang front-end yang fokus membangun antarmuka yang cepat,
-                aksesibel, dan interaktif.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                Berpengalaman dengan React/Next.js dan Tailwind CSS dalam membangun aplikasi modern.
-                Saya senang mengubah desain menjadi pengalaman digital yang nyata dan responsif.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <div className="flex gap-2">
-                <Button asChild>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-                </Button>
-                <Button variant="ghost" asChild>
-                  <a href="/portfolio.pdf" target="_blank" rel="noopener noreferrer">Case Study</a>
-                </Button>
-              </div>
-            </CardFooter>
-          </Card>
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            transition={{ type: "spring", stiffness: 100 }}
+            className="md:col-span-2"
+          >
+            <Card className="hover:shadow-lg transition">
+              <CardHeader>
+                <CardTitle>Tentang Saya</CardTitle>
+                <CardDescription>
+                  Saya sedang mempelajari tentang front-end yang fokus membangun antarmuka yang cepat,
+                  aksesibel, dan interaktif.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Ini saya awal mempelajari next.js dan Tailwind CSS dalam membangun aplikasi modern.
+                  Saya senang mengubah desain menjadi pengalaman digital yang nyata dan responsif.
+                </p>
+              </CardContent>
+              <CardFooter>
+                <div className="flex gap-2">
+                  <Button asChild>
+                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+                  </Button>
+                  <Button variant="ghost" asChild>
+                    <a href="/portfolio.pdf" target="_blank" rel="noopener noreferrer">Case Study</a>
+                  </Button>
+                </div>
+              </CardFooter>
+            </Card>
+          </motion.div>
 
-          <motion.div whileHover={{ scale: 1.02 }}>
-            <Card>
+          <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 100 }}>
+            <Card className="hover:shadow-lg transition">
               <CardHeader>
                 <CardTitle>Keahlian</CardTitle>
                 <CardDescription>Teknologi dan tools utama</CardDescription>
@@ -108,15 +114,15 @@ export default function Home() {
         {/* Projects */}
         <motion.section
           id="projects"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <h2 className="text-2xl font-semibold mb-6 text-center">✨ Proyek Terpilih ✨</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[1, 2].map((i) => (
-              <motion.div key={i} whileHover={{ scale: 1.02 }}>
+              <motion.div key={i} whileHover={{ scale: 1.03 }} transition={{ type: "spring", stiffness: 120 }}>
                 <Card className="hover:shadow-xl transition">
                   <CardHeader>
                     <CardTitle>Proyek {i}</CardTitle>
@@ -149,49 +155,67 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
+          className="mt-8"
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center">Hubungi Saya</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-center">Hubungi Saya</h2>
+
           <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Form Kontak</CardTitle>
-                <CardDescription>Kirim pesan langsung ke saya</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <FormProvider {...methods}>
-                  <form onSubmit={methods.handleSubmit(onSubmit)} className="grid gap-4">
-                    <FormItem>
-                      <FormLabel>Nama</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Nama lengkap" {...methods.register("name")} />
-                      </FormControl>
-                    </FormItem>
+            {/* Form Kontak */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <Card className="hover:shadow-lg transition">
+                <CardHeader>
+                  <CardTitle>Form Kontak</CardTitle>
+                  <CardDescription>Kirim pesan langsung ke saya</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <FormProvider {...methods}>
+                    <form onSubmit={methods.handleSubmit(onSubmit)} className="grid gap-4">
+                      <FormItem>
+                        <FormLabel>Nama</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Nama lengkap" {...methods.register("name")} />
+                        </FormControl>
+                      </FormItem>
 
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input type="email" placeholder="email@domain.com" {...methods.register("email")} />
-                      </FormControl>
-                    </FormItem>
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input type="email" placeholder="email@domain.com" {...methods.register("email")} />
+                        </FormControl>
+                      </FormItem>
 
-                    <FormItem>
-                      <FormLabel>Pesan</FormLabel>
-                      <FormControl>
-                        <Input placeholder="Tulis pesan..." {...methods.register("message")} />
-                      </FormControl>
-                    </FormItem>
+                      <FormItem>
+                        <FormLabel>Pesan</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Tulis pesan..." {...methods.register("message")} />
+                        </FormControl>
+                      </FormItem>
 
-                    <div className="flex gap-2">
-                      <Button type="submit">Kirim</Button>
-                      <Button variant="outline" type="button">Atur Jadwal</Button>
-                    </div>
-                  </form>
-                </FormProvider>
-              </CardContent>
-            </Card>
+                      <div className="flex gap-2">
+                        <Button type="submit">Kirim</Button>
+                        <Button variant="outline" type="button">Atur Jadwal</Button>
+                      </div>
+                    </form>
+                  </FormProvider>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-            <motion.div whileHover={{ scale: 1.02 }}>
-              <Card>
+            {/* Info Kontak */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 50 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <Card className="hover:shadow-lg transition">
                 <CardHeader>
                   <CardTitle>Info Kontak</CardTitle>
                   <CardDescription>Hubungi saya lewat platform berikut</CardDescription>
@@ -199,13 +223,22 @@ export default function Home() {
                 <CardContent>
                   <ul className="text-sm space-y-2">
                     <li>
-                      Email: <a className="text-primary" href="mailto:you@domain.com">you@domain.com</a>
+                      <strong>Email:</strong>{" "}
+                      <a className="text-primary" href="mailto:you@domain.com">
+                        abanstyle@gmail.com
+                      </a>
                     </li>
                     <li>
-                      LinkedIn: <a className="text-primary" href="#">linkedin.com/in/username</a>
+                      <strong>LinkedIn:</strong>{" "}
+                      <a className="text-primary" href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/username
+                      </a>
                     </li>
                     <li>
-                      GitHub: <a className="text-primary" href="#">github.com/username</a>
+                      <strong>GitHub:</strong>{" "}
+                      <a className="text-primary" href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                        github.com/username
+                      </a>
                     </li>
                   </ul>
                 </CardContent>
