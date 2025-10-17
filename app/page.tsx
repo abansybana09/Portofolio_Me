@@ -161,13 +161,13 @@ export default function Home() {
                 title: "Warung Mang Oman",
                 desc: "Website restoran lokal dengan menu interaktif dan sistem pemesanan online.",
                 demo: "#",
-                repo: "#",
+                repo: "https://github.com/abansybana09/Project_PWEB2",
               },
               {
                 title: "PBK Profile Site",
                 desc: "Website profil organisasi PBK dengan tampilan modern dan animasi halus.",
                 demo: "#",
-                repo: "#",
+                repo: "https://github.com/abansybana09/Sorabi-Ceu-Neneng",
               },
               {
                 title: "E-Library System",
