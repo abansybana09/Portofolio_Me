@@ -120,3 +120,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Anchor offset to compensate for fixed navbar (height: 64px) */
+.anchor-offset {
+  position: relative;
+  top: -4rem; /* 64px */
+  visibility: hidden;
+}

@@ -24,9 +24,12 @@ export default function Home() {
 
   return (
     <div className="font-sans min-h-screen p-6 sm:p-12 lg:p-20 bg-gradient-to-br from-amber-50 via-white to-amber-100 text-foreground">
+      {/* Anchors for navbar (offset helpers) */}
+      <span id="home" className="anchor-offset" aria-hidden />
       <main className="max-w-5xl mx-auto grid gap-12">
         {/* Hero Section */}
         <motion.section
+          id="about"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -53,19 +56,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          <motion.div className="flex gap-3" whileHover={{ scale: 1.05 }}>
-            <Button asChild>
-              <a href="#projects">Lihat Proyek</a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href="#contact">Kontak</a>
-            </Button>
-          </motion.div>
         </motion.section>
 
         {/* About + Skills */}
         <motion.section
+          id="about"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
