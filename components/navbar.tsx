@@ -16,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleRoute = () => setOpen(false);
     window.addEventListener("hashchange", handleRoute);
-    return () => window.removeEventListener("hashchange", handleRoute);
+    return () => windo.removeEventListener("hashchange", handleRoute);
   }, []);
 
   const links = [
