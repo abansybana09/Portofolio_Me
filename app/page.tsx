@@ -69,7 +69,7 @@ export default function Home() {
         >
           <motion.div
             whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 100 }}
+            // transition={{ type: "spring", stiffness: 100 }}
             className="md:col-span-2"
           >
             <Card className="hover:shadow-lg transition">
@@ -111,7 +111,7 @@ export default function Home() {
 
           <motion.div
             whileHover={{ scale: 1.02 }}
-            transition={{ type: "spring", stiffness: 100 }}
+            // transition={{ type: "spring", stiffness: 100 }}
           >
             <Card className="hover:shadow-lg transition">
               <CardHeader>
@@ -179,7 +179,7 @@ export default function Home() {
                 whileHover={{ scale: 1.03 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 40 }}
-                transition={{ duration: 0.5, delay: i * 0.15 }}
+                // transition={{ duration: 0.5, delay: i * 0.15 }}
                 viewport={{ once: true }}
               >
                 <Card className="h-full flex flex-col justify-between hover:shadow-xl transition-all duration-300">
@@ -240,7 +240,7 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.6 }}
+              // transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
               <Card className="hover:shadow-lg transition">
@@ -304,7 +304,7 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 50 }}
-              transition={{ duration: 0.6 }}
+              // transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
               <Card className="hover:shadow-lg transition">
