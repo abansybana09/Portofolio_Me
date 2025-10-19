@@ -76,15 +76,12 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Tentang Saya</CardTitle>
                 <CardDescription>
-                  Saya sedang mempelajari tentang front-end yang fokus membangun
-                  antarmuka yang cepat, aksesibel, dan interaktif.
+                  Saya sedang mempelajari pengembangan front-end dengan fokus pada pembuatan antarmuka yang cepat, responsif, mudah diakses, dan interaktif untuk memberikan pengalaman pengguna terbaik.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Ini saya awal mempelajari next.js dan Tailwind CSS dalam
-                  membangun aplikasi modern. Saya senang mengubah desain menjadi
-                  pengalaman digital yang nyata dan responsif.
+                  Saat ini saya mulai mempelajari Next.js dan Tailwind CSS untuk membangun aplikasi web modern yang cepat dan efisien. Saya menikmati proses mengubah desain menjadi pengalaman digital yang nyata, interaktif, dan responsif di berbagai perangkat.
                 </p>
               </CardContent>
               <CardFooter>
@@ -154,13 +151,13 @@ export default function Home() {
             {[
               {
                 title: "Warung Mang Oman",
-                desc: "Website restoran lokal dengan menu interaktif dan sistem pemesanan online.",
+                desc: "Website restoran lokal dengan menu interaktif dan sistem pemesanan online yang dibangun menggunakan bahasa pemrograman PHP native dengan konsep arsitektur MVC (Model-View-Controller), sehingga setiap fitur seperti tampilan menu, proses pemesanan, dan manajemen data berjalan secara terstruktur, efisien, dan mudah dikembangkan.",
                 demo: "#",
                 repo: "https://github.com/abansybana09/Project_PWEB2",
               },
               {
-                title: "PBK Profile Site",
-                desc: "Website profil organisasi PBK dengan tampilan modern dan animasi halus.",
+                title: "Sorabi Ceu Neneng",
+                desc: "Website ini dirancang berbasis framework CodeIgniter 4 (CI4) yang memanfaatkan struktur MVC guna memisahkan logika aplikasi, tampilan, dan pengelolaan data. Pendekatan ini meningkatkan kinerja, keamanan, dan kemudahan pengembangan fitur baru.",
                 demo: "#",
                 repo: "https://github.com/abansybana09/Sorabi-Ceu-Neneng",
               },
@@ -190,14 +187,14 @@ export default function Home() {
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription>{project.desc}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  {/* <CardContent>
                     <p className="text-sm text-muted-foreground leading-relaxed"></p>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Proyek ini menggunakan teknologi modern dan menonjolkan
                       UI/UX yang intuitif. Fokus pada performa dan kemudahan
                       navigasi bagi pengguna.
                     </p>
-                  </CardContent>
+                  </CardContent> */}
                   <CardFooter className="justify-end gap-2">
                     <Button asChild>
                       <a
