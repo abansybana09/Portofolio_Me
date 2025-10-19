@@ -151,7 +151,7 @@ export default function Home() {
             {[
               {
                 title: "Warung Mang Oman",
-                desc: "Website restoran lokal dengan menu interaktif dan sistem pemesanan online yang dibangun menggunakan bahasa pemrograman PHP native dengan konsep arsitektur MVC (Model-View-Controller), sehingga setiap fitur seperti tampilan menu, proses pemesanan, dan manajemen data berjalan secara terstruktur, efisien, dan mudah dikembangkan.",
+                desc: "Website restoran lokal dengan menu interaktif dan sistem pemesanan online. Dibangun menggunakan PHP native dengan arsitektur MVC untuk mengatur logika aplikasi, tampilan, dan data secara terstruktur, efisien, serta mudah dikembangkan.",
                 demo: "#",
                 repo: "https://github.com/abansybana09/Project_PWEB2",
               },
@@ -182,7 +182,7 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 viewport={{ once: true }}
               >
-                <Card className="hover:shadow-xl transition-all duration-300">
+                <Card className="h-full flex flex-col justify-between hover:shadow-xl transition-all duration-300">
                   <CardHeader>
                     <CardTitle>{project.title}</CardTitle>
                     <CardDescription>{project.desc}</CardDescription>
