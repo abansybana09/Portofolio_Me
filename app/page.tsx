@@ -337,11 +337,11 @@ export default function Home() {
                       <strong>GitHub:</strong>{" "}
                       <a
                         className="text-primary"
-                        href="https://github.com/username"
+                        href="https://github.com/abansybana09"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        github.com/username
+                        github.com/abansybana09
                       </a>
                     </li>
                   </ul>
