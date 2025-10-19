@@ -115,7 +115,7 @@ export default function Home() {
           >
             <Card className="hover:shadow-lg transition">
               <CardHeader>
-                <CardTitle>Keahlian</CardTitle>
+                <CardTitle>Keahlian Masih Belajar</CardTitle>
                 <CardDescription>Teknologi dan tools utama</CardDescription>
               </CardHeader>
               <CardContent>
