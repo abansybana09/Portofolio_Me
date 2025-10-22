@@ -76,12 +76,17 @@ export default function Home() {
               <CardHeader>
                 <CardTitle>Tentang Saya</CardTitle>
                 <CardDescription>
-                  Saya sedang mempelajari pengembangan front-end dengan fokus pada pembuatan antarmuka yang cepat, responsif, mudah diakses, dan interaktif untuk memberikan pengalaman pengguna terbaik.
+                  Saya sedang mempelajari pengembangan front-end dengan fokus
+                  pada pembuatan antarmuka yang cepat, responsif, mudah diakses,
+                  dan interaktif untuk memberikan pengalaman pengguna terbaik.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Saat ini saya mulai mempelajari Next.js dan Tailwind CSS untuk membangun aplikasi web modern yang cepat dan efisien. Saya menikmati proses mengubah desain menjadi pengalaman digital yang nyata, interaktif, dan responsif di berbagai perangkat.
+                  Saat ini saya mulai mempelajari Next.js dan Tailwind CSS untuk
+                  membangun aplikasi web modern yang cepat dan efisien. Saya
+                  menikmati proses mengubah desain menjadi pengalaman digital
+                  yang nyata, interaktif, dan responsif di berbagai perangkat.
                 </p>
               </CardContent>
               <CardFooter>
@@ -212,6 +217,73 @@ export default function Home() {
                         rel="noopener noreferrer"
                       >
                         Repo
+                      </a>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </motion.section>
+
+        {/* Certificates Section */}
+        <motion.section
+          id="certificates"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-semibold mb-6 text-center">
+            🎓 Sertifikat
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Belajar Dasar Pemrograman Web",
+                desc: "Mempelajari dasar HTML, CSS, dan JavaScript untuk membangun website sederhana.",
+                org: "Dicoding Indonesia",
+                link: "https://www.dicoding.com/certificates/XXXXXX",
+              },
+              {
+                title: "Belajar Dasar Pemrograman JavaScript",
+                desc: "Pemahaman fundamental tentang logika dan sintaks JavaScript modern.",
+                org: "Dicoding Indonesia",
+                link: "https://www.dicoding.com/certificates/YYYYYY",
+              },
+              {
+                title: "Front-End Web Developer",
+                desc: "Membangun website responsif menggunakan framework modern seperti React dan Tailwind.",
+                org: "Dicoding Indonesia",
+                link: "https://www.dicoding.com/certificates/ZZZZZZ",
+              },
+            ].map((cert, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.03 }}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+              >
+                <Card className="hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                  <CardHeader>
+                    <CardTitle>{cert.title}</CardTitle>
+                    <CardDescription>{cert.desc}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      Diterbitkan oleh: <strong>{cert.org}</strong>
+                    </p>
+                  </CardContent>
+                  <CardFooter className="justify-end">
+                    <Button asChild variant="outline">
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Lihat Sertifikat
                       </a>
                     </Button>
                   </CardFooter>
@@ -356,13 +428,22 @@ export default function Home() {
       <footer className="mt-12 border-t border-muted/30 pt-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Mohamad Aban Sy'bana. All rights reserved.
+            © {new Date().getFullYear()} Mohamad Aban Sy'bana. All rights
+            reserved.
           </div>
 
           <div className="flex items-center gap-4 text-sm">
-            <a href="mailto:abanstyle@gmail.com" className="text-primary">abanstyle@gmail.com</a>
-            <a href="https://www.linkedin.com/in/mohamad-aban-sy-bana-16b21a322?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">LinkedIn</a>
-            <a href="https://github.com/abansybana09" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">GitHub</a>
+            <a href="mailto:abanstyle@gmail.com" className="text-primary">
+              abanstyle@gmail.com
+            </a>
+            <a
+              href="https://github.com/abansybana09"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </footer>
