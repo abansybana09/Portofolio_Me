@@ -326,7 +326,7 @@ export default function Home() {
                       <strong>LinkedIn:</strong>{" "}
                       <a
                         className="text-primary"
-                        href="https://linkedin.com/in/username"
+                        href="https://www.linkedin.com/in/mohamad-aban-sy-bana-16b21a322?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -361,8 +361,8 @@ export default function Home() {
 
           <div className="flex items-center gap-4 text-sm">
             <a href="mailto:abanstyle@gmail.com" className="text-primary">abanstyle@gmail.com</a>
-            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">LinkedIn</a>
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">GitHub</a>
+            <a href="https://www.linkedin.com/in/mohamad-aban-sy-bana-16b21a322?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">LinkedIn</a>
+            <a href="https://github.com/abansybana09" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">GitHub</a>
           </div>
         </div>
       </footer>
