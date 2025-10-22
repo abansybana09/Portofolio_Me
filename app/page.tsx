@@ -244,19 +244,19 @@ export default function Home() {
                 title: "Belajar Dasar Pemrograman Web",
                 desc: "Mempelajari dasar HTML, CSS, dan JavaScript untuk membangun website sederhana.",
                 org: "Dicoding Indonesia",
-                link: "https://www.dicoding.com/certificates/XXXXXX",
+                link: "certificate/2.pdf",
               },
               {
                 title: "Belajar Dasar Pemrograman JavaScript",
                 desc: "Pemahaman fundamental tentang logika dan sintaks JavaScript modern.",
                 org: "Dicoding Indonesia",
-                link: "https://www.dicoding.com/certificates/YYYYYY",
+                link: "certificate/3.pdf",
               },
               {
                 title: "Front-End Web Developer",
                 desc: "Membangun website responsif menggunakan framework modern seperti React dan Tailwind.",
                 org: "Dicoding Indonesia",
-                link: "https://www.dicoding.com/certificates/ZZZZZZ",
+                link: "certificate/1.pdf",
               },
             ].map((cert, i) => (
               <motion.div
