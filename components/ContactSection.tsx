@@ -102,8 +102,8 @@ export default function ContactSection() {
               <ul className="text-sm space-y-2">
                 <li>
                   <strong>Email:</strong>{" "}
-                  <a className="text-primary" href="mailto:abanstyle@gmail.com">
-                    abanstyle@gmail.com
+                  <a className="text-primary" href="mailto:muhamadaban81@gmail.com">
+                    muhamadaban81@gmail.com
                   </a>
                 </li>
                 <li>
