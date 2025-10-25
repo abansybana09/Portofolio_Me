@@ -10,7 +10,7 @@ export default function FooterSection() {
 
         <div className="flex items-center gap-4 text-sm">
           <a href="mailto:abanstyle@gmail.com" className="text-primary">
-            abanstyle@gmail.com
+            muhamadaban81@gmail.com
           </a>
           <a
             href="https://github.com/abansybana09"
