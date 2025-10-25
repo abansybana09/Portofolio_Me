@@ -114,7 +114,7 @@ export default function ContactSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    linkedin.com/in/username
+                    linkedin.com/in/mohamadabansybana
                   </a>
                 </li>
                 <li>
