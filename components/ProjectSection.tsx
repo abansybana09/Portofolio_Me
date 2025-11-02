@@ -25,10 +25,10 @@ export default function ProjectSection() {
       repo: "https://github.com/abansybana09/Sorabi-Ceu-Neneng",
     },
     {
-      title: "E-Library System",
-      desc: "Aplikasi perpustakaan digital berbasis PHP & MySQL dengan fitur CRUD buku.",
+      title: "Pecinta Mancing",
+      desc: "Aplikasi untuk pecinta mancing yang menyajikan info lokasi, cuaca, dan tips. Dibangun menggunakan React.js, aplikasi ini menampilkan antarmuka yang minimalis, dan responsif penuh untuk kenyamanan di desktop maupun mobile.",
       demo: "#",
-      repo: "#",
+      repo: "https://github.com/abansybana09/Pencinta-Mancing",
     },
     {
       title: "NextPortfolio",
