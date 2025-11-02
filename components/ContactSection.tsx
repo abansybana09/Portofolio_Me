@@ -26,8 +26,7 @@ export default function ContactSection() {
       viewport={{ once: true }}
       className="mt-8"
     >
-      <h2 className="text-2xl font-semibold mb-6 text-center">Hubungi Saya</h2>
-
+      <h2 className="text-2xl font-semibold mb-6 text-center">📞 Hubungi Saya</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {/* Form Kontak */}
         <motion.div
