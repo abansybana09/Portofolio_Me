@@ -9,7 +9,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
-    <div className="font-sans min-h-screen p-6 sm:p-12 lg:p-20 bg-gradient-to-br from-amber-50 via-white to-amber-100 text-foreground">
+    <div className="font-sans min-h-screen p-6 sm:p-12 lg:p-20 from-amber-50 via-white to-amber-100 text-foreground">
       <main className="max-w-5xl mx-auto grid gap-12">
         <HeroSection />
         <AboutSection />

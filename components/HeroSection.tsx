@@ -15,22 +15,22 @@ export default function HeroSection() {
     >
       <div className="flex items-center gap-5">
         <motion.div whileHover={{ scale: 1.05 }}>
-          <Avatar className="size-24 shadow-lg ring-4 ring-amber-200">
+            <Avatar className="size-24 shadow-lg ring-4 ring-amber-200 dark:ring-amber-600/40">
             <AvatarImage src="/lufy.jpg" alt="Your name" />
             <AvatarFallback>SI</AvatarFallback>
           </Avatar>
         </motion.div>
         <div>
-          <h1 className="text-4xl font-bold tracking-tight">
-            Mohamad Aban Sy'bana
-          </h1>
+            <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent dark:from-cyan-300 dark:to-purple-400">
+              Mohamad Aban Sy'bana
+            </h1>
           <p className="text-muted-foreground mt-1">
             Frontend Developer • UI/UX Enthusiast
           </p>
           <div className="flex gap-2 mt-3 flex-wrap">
-            <Badge>Next.js</Badge>
-            <Badge variant="secondary">TypeScript</Badge>
-            <Badge variant="outline">Tailwind</Badge>
+              <Badge className="bg-primary/5 dark:bg-primary/20">Next.js</Badge>
+              <Badge variant="secondary" className="dark:bg-secondary/10">TypeScript</Badge>
+              <Badge variant="outline" className="dark:border-secondary/20">Tailwind</Badge>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function AboutSection() {
       className="grid md:grid-cols-3 gap-6"
     >
       <motion.div whileHover={{ scale: 1.02 }} className="md:col-span-2">
-        <Card className="hover:shadow-lg transition">
+        <Card className="hover:shadow-lg transition-transform duration-200 ease-in-out hover:-translate-y-1">
           <CardHeader>
             <CardTitle>Tentang Saya</CardTitle>
             <CardDescription>
@@ -52,7 +52,7 @@ export default function AboutSection() {
       </motion.div>
 
       <motion.div whileHover={{ scale: 1.02 }}>
-        <Card className="hover:shadow-lg transition">
+        <Card className="hover:shadow-lg transition-transform duration-200 ease-in-out hover:-translate-y-1">
           <CardHeader>
             <CardTitle>Keahlian Masih Belajar</CardTitle>
             <CardDescription>Teknologi dan tools utama</CardDescription>
